@@ -1,2 +1,137 @@
-cccc
-dddd
+/*   GLOBAL STYLES */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/*   HEADER */
+header{
+    background-color:#1e3a8a;
+    color:white;
+    padding:25px;
+    text-align:center;
+    opacity:0.95;
+}
+
+/*    NAVIGATION BAR (FLEXBOX) */
+nav{
+    background-color:#2563eb;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:8px 12px;
+}
+
+nav a:hover{
+    background-color:#1e40af;
+    border-radius:4px;
+}
+
+/*    MAIN CONTENT */
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:30px;
+}
+
+/*    SECTIONS */
+section{
+    background-color:white;
+    margin-bottom:25px;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+/*    GRID SECTION */
+.grid-box{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:15px;
+}
+
+.grid-item{
+    background-color:#2563eb;
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-radius:6px;
+}
+
+.grid-box_a{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:15px;
+}
+
+.grid-item_a{
+    background-color:#30ed98;
+    color:rgb(0, 0, 0);
+    padding:20px;
+    text-align:center;
+    border-radius:6px;
+}
+
+/* FORM */
+input, textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+button{
+    background-color:#2563eb;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#1e40af;
+}
+
+/* FOOTER */
+footer{
+    background-color:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+    opacity:0.9;
+}
+
+/*   RESPONSIVE DESIGN */
+ @media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .grid-box{
+        grid-template-columns:1fr;
+    }
+
+    main{
+        padding:15px;
+    }
+}
